@@ -108,6 +108,7 @@ int main() {
           }
 
           // Update the weights and resample
+          
           pf.updateWeights(sensor_range, sigma_landmark, noisy_observations, map);
           pf.resample();
 
