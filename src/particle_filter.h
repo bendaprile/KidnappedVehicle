@@ -84,6 +84,12 @@ class ParticleFilter {
    *   the new set of particles.
    */
   void resample();
+  
+  /**
+   * Function that calculates the multivariate probability
+  */
+  double multiv_prob(double sig_x, double sig_y, double x_obs, double y_obs,
+                   double mu_x, double mu_y);
 
   /**
    * Set a particles list of associations, along with the associations'
